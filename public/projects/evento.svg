@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#141310"/>
+
+  <g>
+    <rect x="0" y="0" width="260" height="1000" fill="#1C1B18"/>
+
+    <rect x="20" y="92" width="44" height="40" rx="10" fill="#F2ECDE"/>
+    <text x="80" y="118" fill="#F2ECDE" font-family="Arial, sans-serif" font-size="18" font-weight="bold">EVENTO</text>
+
+    <g font-family="Arial, sans-serif" font-size="14">
+      <text x="18" y="192" fill="#3CBAAE" font-weight="bold">Dashboard</text>
+      <g transform="translate(16, 216)">
+        <rect x="0" y="0" width="208" height="40" rx="8" fill="#2A2925"/>
+        <rect x="14" y="14" width="12" height="12" rx="3" fill="#3CBAAE"/>
+        <text x="38" y="26" fill="#F2ECDE">Overview</text>
+      </g>
+      <g transform="translate(16, 268)">
+        <rect x="0" y="0" width="208" height="40" rx="8" fill="transparent"/>
+        <circle cx="20" cy="20" r="7" fill="none" stroke="#8C8A84" stroke-width="1.5"/>
+        <text x="38" y="26" fill="#8C8A84">Events</text>
+      </g>
+      <g transform="translate(16, 320)">
+        <rect x="0" y="0" width="208" height="40" rx="8" fill="transparent"/>
+        <rect x="14" y="14" width="12" height="12" rx="3" fill="none" stroke="#8C8A84" stroke-width="1.5"/>
+        <text x="38" y="26" fill="#8C8A84">Vendors</text>
+      </g>
+      <g transform="translate(16, 372)">
+        <rect x="0" y="0" width="208" height="40" rx="8" fill="transparent"/>
+        <circle cx="20" cy="20" r="7" fill="none" stroke="#8C8A84" stroke-width="1.5"/>
+        <text x="38" y="26" fill="#8C8A84">Bookings</text>
+      </g>
+      <g transform="translate(16, 424)">
+        <rect x="0" y="0" width="208" height="40" rx="8" fill="transparent"/>
+        <rect x="14" y="14" width="12" height="12" rx="3" fill="none" stroke="#8C8A84" stroke-width="1.5"/>
+        <text x="38" y="26" fill="#8C8A84">Analytics</text>
+      </g>
+    </g>
+
+    <rect x="20" y="880" width="192" height="56" rx="28" fill="#3CBAAE"/>
+    <text x="76" y="916" fill="#141310" font-family="Arial, sans-serif" font-size="16" font-weight="bold">+ New Event</text>
+  </g>
+
+  <rect x="280" y="104" width="1280" height="56" rx="12" fill="#1C1B18"/>
+  <text x="312" y="142" fill="#F2ECDE" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Good evening, Anurudh</text>
+  <rect x="1300" y="124" width="236" height="32" rx="16" fill="#2A2925"/>
+  <text x="1320" y="146" fill="#8C8A84" font-family="Arial, sans-serif" font-size="12">Search events…</text>
+
+  <g>
+    <rect x="280" y="196" width="540" height="280" rx="14" fill="#1C1B18"/>
+    <text x="312" y="238" fill="#F2ECDE" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Upcoming Events</text>
+
+    <g font-family="Arial, sans-serif">
+      <g transform="translate(312, 276)">
+        <rect x="0" y="0" width="488" height="64" rx="10" fill="#2A2925"/>
+        <rect x="14" y="14" width="32" height="32" rx="8" fill="#3CBAAE"/>
+        <text x="64" y="26" fill="#F2ECDE" font-size="15" font-weight="bold">Tech Fest 2026</text>
+        <text x="64" y="44" fill="#8C8A84" font-size="12">Mar 14 · Hall A</text>
+        <rect x="428" y="40" width="60" height="24" rx="12" fill="#9FD463"/>
+        <text x="442" y="56" fill="#141310" font-size="11" font-weight="bold">LIVE</text>
+      </g>
+
+      <g transform="translate(312, 356)">
+        <rect x="0" y="0" width="488" height="64" rx="10" fill="#2A2925"/>
+        <rect x="14" y="14" width="32" height="32" rx="8" fill="#EF7B3C"/>
+        <text x="64" y="26" fill="#F2ECDE" font-size="15" font-weight="bold">Design Summit</text>
+        <text x="64" y="44" fill="#8C8A84" font-size="12">Apr 02 · Auditorium</text>
+        <rect x="428" y="40" width="60" height="24" rx="12" fill="#F2C94C"/>
+        <text x="442" y="56" fill="#141310" font-size="11" font-weight="bold">DRAFT</text>
+      </g>
+    </g>
+  </g>
+
+  <g>
+    <rect x="840" y="196" width="400" height="280" rx="14" fill="#1C1B18"/>
+    <text x="872" y="238" fill="#F2ECDE" font-family="Arial, sans-serif" font-size="16" font-weight="bold">My Events</text>
+
+    <g font-family="Arial, sans-serif">
+      <g transform="translate(872, 276)">
+        <rect x="0" y="0" width="328" height="52" rx="10" fill="#2A2925"/>
+        <rect x="12" y="12" width="28" height="28" rx="6" fill="#3CBAAE"/>
+        <text x="52" y="26" fill="#F2ECDE" font-size="14" font-weight="bold">Tech Fest 2026</text>
+        <text x="52" y="40" fill="#8C8A84" font-size="11">Mar 14 · Hall A</text>
+      </g>
+
+      <g transform="translate(872, 336)">
+        <rect x="0" y="0" width="328" height="52" rx="10" fill="#2A2925"/>
+        <rect x="12" y="12" width="28" height="28" rx="6" fill="#EF7B3C"/>
+        <text x="52" y="26" fill="#F2ECDE" font-size="14" font-weight="bold">Design Summit</text>
+        <text x="52" y="40" fill="#8C8A84" font-size="11">Apr 02 · Auditorium</text>
+      </g>
+    </g>
+  </g>
+
+  <g>
+    <rect x="280" y="508" width="1280" height="352" rx="14" fill="#1C1B18"/>
+    <text x="312" y="548" fill="#F2ECDE" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Booking Flow</text>
+
+    <rect x="312" y="578" width="920" height="260" rx="12" fill="#2A2925"/>
+    <rect x="312" y="578" width="920" height="48" rx="12" fill="transparent"/>
+    <rect x="332" y="596" width="880" height="12" rx="6" fill="#2A2925"/>
+    <g font-family="Arial, sans-serif" fill="#8C8A84" font-size="12">
+      <text x="336" y="616">Event</text>
+      <text x="480" y="616">Date &amp; Time</text>
+      <text x="700" y="616">Tickets</text>
+      <text x="860" y="616">Payment</text>
+      <text x="1050" y="616">Confirm</text>
+    </g>
+  </g>
+</svg>

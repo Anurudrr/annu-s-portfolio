@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anurudh Singh Rajawat — Blog</title>
+    <link>https://anurudh.dev/blog</link>
+    <description>Writing on UI/UX engineering, backend architecture, design systems, and mobile development.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://anurudh.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Security Without Tears</title>
+      <link>https://anurudh.dev/blog/spring-security-without-tears</link>
+      <guid>https://anurudh.dev/blog/spring-security-without-tears</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <description>A practical walkthrough of custom filter chains, CORS boundaries, and stateless auth flow.</description>
+    </item>
+    <item>
+      <title>Design Systems in React: From Tokens to Components</title>
+      <link>https://anurudh.dev/blog/design-systems-in-react</link>
+      <guid>https://anurudh.dev/blog/design-systems-in-react</guid>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Building a scalable design system with design tokens, Theme UI, and component composition patterns.</description>
+    </item>
+    <item>
+      <title>Kotlin &amp; Jetpack Compose: Modern Android Development</title>
+      <link>https://anurudh.dev/blog/kotlin-compose-android</link>
+      <guid>https://anurudh.dev/blog/kotlin-compose-android</guid>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <description>Migrating from XML layouts to Compose — lessons learned, performance tips, and architectural patterns.</description>
+    </item>
+    <item>
+      <title>Bridging UX Precision With Java Architecture</title>
+      <link>https://anurudh.dev/blog/bridging-the-gap-ux-to-java</link>
+      <guid>https://anurudh.dev/blog/bridging-the-gap-ux-to-java</guid>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <description>How visual hierarchy, spacing systems, and component thinking can sharpen backend decisions.</description>
+    </item>
+  </channel>
+</rss>

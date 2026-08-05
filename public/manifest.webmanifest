@@ -1,0 +1,23 @@
+{
+  "name": "Anurudh Singh Rajawat — Portfolio",
+  "short_name": "AS.DEV",
+  "description": "Editorial portfolio of Anurudh Singh Rajawat, a full-stack developer and UI/UX designer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141310",
+  "theme_color": "#141310",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/hover_avatar_nobg-320.webp",
+      "sizes": "320x360",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

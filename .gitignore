@@ -1,0 +1,29 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Editor / OS scratch
+.idea/
+.vscode/
+*.swp
+
+# Vite/Railway runtime
+.cache/
+
+# Local scratch scripts (kept in scripts/ but not needed by app build)
+scripts/*.cjs.bak
+
+.vercel
+
+# Artifacts folder (large binary files, browser profiles)
+artifacts/
+
+.env*.local
+
+# Orphan LFS pointer (real binary was stripped, push was rejected)
+public/models/character.glb

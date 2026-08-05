@@ -1,0 +1,12 @@
+artifacts/
+.vercel/
+node_modules/
+dist/
+*.log
+*.local.log
+*.err.log
+.dev-server.log
+.launch.test.log
+scripts/
+.vscode/
+*.tsbuildinfo

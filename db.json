@@ -1,0 +1,228 @@
+{
+  "projects": [
+    {
+      "id": "p1",
+      "pNo": "01",
+      "slug": "evento",
+      "year": "2025-2026",
+      "category": "Full Stack Design",
+      "title": "Evento",
+      "description": "A full-stack web application connecting users with top-rated event organizers and service providers. Implemented booking functionality, service discovery features, and a responsive UI for seamless event planning and reservations.",
+      "problem": "Event booking and planning often suffer from disconnected operational vectors and disjointed schedules between clients, vendors, and organisers.",
+      "solution": "Built a full-stack web application with booking functionality, service discovery features, and a responsive UI for seamless event planning and reservations.",
+      "technologies": [
+        "React.js",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Framer Motion"
+      ],
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop",
+      "challenges": "Synchronizing parallel vendor schedules with user booking carts gracefully on the React frontend.",
+      "learnings": "Deepened my skills in layout design, state structures, and creating high-performance interactive scheduling elements in React.",
+      "githubUrl": "https://github.com/Anurudrr/EVENTO-EVENT-MANAGER",
+      "demoUrl": "https://evento-six-livid.vercel.app/"
+    },
+    {
+      "id": "p2",
+      "pNo": "02",
+      "slug": "hopin",
+      "year": "2026",
+      "category": "Full-Stack Product",
+      "title": "Hopin",
+      "description": "A full-stack ride-sharing platform enabling users to find and match with commuters on similar routes. Engineered route matching algorithms, fare calculation and splitting, real-time location tracking, and user authentication. Deployed on Vercel with optimized performance for high user volume.",
+      "problem": "Daily commuters traveling similar routes rarely find each other — no easy way to match rides, split fares, or share live location during a trip.",
+      "solution": "Built a full-stack ride-sharing platform where users find and match with commuters on similar routes — route matching, fare calculation and splitting, real-time location tracking, and authentication, deployed on Vercel.",
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "REST APIs",
+        "Vercel"
+      ],
+      "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=800&auto=format&fit=crop",
+      "challenges": "Designing route matching algorithms and fare calculation/splitting logic that stay fast under high user volume.",
+      "learnings": "Deepened full-stack TypeScript and PostgreSQL engineering, real-time location handling, and Vercel deployment practices.",
+      "githubUrl": "https://github.com/Anurudrr/HOPIN--CAB-SERVICES",
+      "demoUrl": "https://hopin-five.vercel.app/"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Brutalist Grid Typography Study",
+      "tag": "Graphic Design",
+      "imageUrl": "https://images.unsplash.com/photo-1561070791-26c113006238?q=80&w=600&auto=format&fit=crop",
+      "date": "Feb 2025",
+      "description": "An interactive graphic study researching vintage print media, coarse Swiss grid structures, and dense layouts. Features custom high-contrast palettes and hand-drawn vectors."
+    },
+    {
+      "id": "g2",
+      "title": "Full-Stack System Architecture Schema",
+      "tag": "Software Engineering",
+      "imageUrl": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600&auto=format&fit=crop",
+      "date": "May 2025",
+      "description": "Data-flow diagrams mapping out spring security filters, CORS configs, and database connection queries designed for low latency high throughput dashboard feeds."
+    },
+    {
+      "id": "g3",
+      "title": "Industrial Aesthetics on Canvas",
+      "tag": "Illustration Art",
+      "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop",
+      "date": "Oct 2024",
+      "description": "Abstract vector shapes designed to replicate traditional printing press overlays, utilizing ink splatters, line misalignments, and vivid primary halftone shades."
+    },
+    {
+      "id": "g4",
+      "title": "Vadodara Heritage Architectural Capture",
+      "tag": "Photography",
+      "imageUrl": "https://images.unsplash.com/photo-1548013146-72479768b906?q=80&w=600&auto=format&fit=crop",
+      "date": "Dec 2024",
+      "description": "High contrast shadow experiment highlighting symmetry and geometric structures across historic domes, framing design patterns from the physical world."
+    },
+    {
+      "id": "g5",
+      "title": "Ergonomic Code Station Vibe",
+      "tag": "Dev Environment",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop",
+      "date": "Jan 2026",
+      "description": "A dark theme vertical monitor config aligned perfectly for scanning compiler logs, practicing daily competitive algorithms, and checking UI margin offsets."
+    },
+    {
+      "id": "g6",
+      "title": "HAL 9000 Vector Redesign",
+      "tag": "UI/UX Prototype",
+      "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=600&auto=format&fit=crop",
+      "date": "Apr 2025",
+      "description": "An experimental futuristic interface built with neon indicators, flat grids, telemetry parameters, and smooth animations reflecting clean, non-standard user journeys."
+    }
+  ],
+  "blog": [
+    {
+      "id": "b1",
+      "slug": "bridging-the-gap-ux-to-java",
+      "title": "Bridging the Gap: Why Design Mastery Accelerates Backend Logic",
+      "date": "May 24, 2025",
+      "author": "Anurudh Singh Rajawat",
+      "category": "Engineering Style",
+      "tags": [
+        "UI/UX",
+        "Java",
+        "Architecture",
+        "Engineering"
+      ],
+      "readingTime": "5 min read",
+      "summary": "Exploration on why applying exact geometric handoffs and architectural visual guidelines can make database schemas and endpoints fundamentally cleaner.",
+      "content": "### The Visual Logic of a Relational Table\n\nMany developers treat front-end design as secondary to backend implementation. This separation is historical, but deeply limiting in product practice. When you master both, you begin seeing SQL schemas as grid systems. \n\n```java\n@RestController\n@RequestMapping(\"/api/v1/grid\")\npublic class GridController {\n    @GetMapping(\"/layout\")\n    public ResponseEntity<LayoutSpec> getLayout() {\n        return ResponseEntity.ok(new LayoutSpec(12, \"column\", 24));\n    }\n}\n```\n\n#### Typography & Database Normalisation\n\n1. **Consistency**: Perfect padding leads to clean data schemas. If you can define a UI spacing scale (4px, 8px, 12px, 16px, 24px) mathematically, you'll naturally structure relational constraints with proper primary key indexing.\n2. **Clutter Elimination**: In custom letterings, every line must work. Similarly, in high-throughput tables: no unused tables, no orphan relationships.\n\nDesigning with strict boundaries teaches a systems-level developer to look for symmetry in service layers. Leverage graphic precision to write beautiful backend packages."
+    },
+    {
+      "id": "b2",
+      "slug": "spring-security-without-tears",
+      "title": "Spring Security Without Tears: Mastering Custom Filter Chains",
+      "date": "Apr 02, 2026",
+      "author": "Anurudh Singh Rajawat",
+      "category": "Backend Development",
+      "tags": [
+        "Spring Boot",
+        "Security",
+        "Best Practices"
+      ],
+      "readingTime": "8 min read",
+      "summary": "Demystifying Spring Boot security context holders, filters, and CORS configurations. Step-by-step assembly of JWT filter authentication mechanisms.",
+      "content": "### Unraveling the Spring Security Chain\n\nSpring Security can feel like compiled magic. Under the hood, however, it is a straightforward list of filtering checks mounted sequentially onto incoming network queries. Let's break down how we can hook custom validations into this chain.\n\n#### Custom JWT Filter Blueprint\n\n```java\npublic class JwtTokenFilter extends OncePerRequestFilter {\n    private final JwtTokenService jwtService;\n\n    @Override\n    protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain) \n            throws ServletException, IOException {\n        String authHeader = req.getHeader(\"Authorization\");\n        if (authHeader != null && authHeader.startsWith(\"Bearer \")) {\n            String token = authHeader.substring(7);\n            if (jwtService.validateToken(token)) {\n                Authentication auth = jwtService.getAuthentication(token);\n                SecurityContextHolder.getContext().setAuthentication(auth);\n            }\n        }\n        chain.doFilter(req, res);\n    }\n} \n```\n\n#### Key Architectural Takeaways\n- **Never trust CORS defaults**: Keep cross-origins strictly bounded on localhost development grids.\n- **Keep filters state-less**: Stateless sessions eliminate memory pressure under massive request pools."
+    },
+    {
+      "id": "b3",
+      "slug": "design-systems-in-react",
+      "title": "Design Systems in React: From Tokens to Components",
+      "date": "Jan 15, 2026",
+      "author": "Anurudh Singh Rajawat",
+      "category": "Frontend Engineering",
+      "tags": [
+        "React",
+        "Design Systems",
+        "TypeScript"
+      ],
+      "readingTime": "6 min read",
+      "summary": "Building a scalable design system with design tokens, Theme UI, and component composition patterns.",
+      "content": "### A design system isn't a component library — it's a set of decisions encoded as reusable primitives. Here's how I structure one in React.\n\n#### Layer 1: Design Tokens\nRaw values — colors, spacing, typography, shadows, radii. Stored as JSON, transformed via Style Dictionary into CSS custom properties, TypeScript constants, Tailwind config, and Figma variables.\n\n#### Layer 2: Primitive Components\nBox, Flex, Text, Heading — unstyled layout primitives that consume tokens. Built on top of a CSS-in-JS solution or Tailwind. These never ship to consumers directly.\n\n#### Layer 3: Semantic Components\nButton, Input, Card, Modal — composed from primitives, exposing semantic props (variant, size, intent). These are what product teams import.\n\n#### Composition Over Configuration\n\n```tsx\n<Button variant=\"primary\" size=\"lg\">\n  Submit\n</Button>\n```\n\n#### Theme Provider Pattern\nWrap the app in a ThemeProvider that injects tokens via CSS custom properties. Dark mode, brand themes, high contrast — all become a token swap, not a component rewrite.\n\nStart small. Tokens first. Primitives second. Semantic components last. Each layer builds on the previous — no skipping."
+    },
+    {
+      "id": "b4",
+      "slug": "kotlin-compose-android",
+      "title": "Kotlin & Jetpack Compose: Modern Android Development",
+      "date": "Nov 08, 2025",
+      "author": "Anurudh Singh Rajawat",
+      "category": "Mobile Development",
+      "tags": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android"
+      ],
+      "readingTime": "7 min read",
+      "summary": "Migrating from XML layouts to Compose — lessons learned, performance tips, and architectural patterns.",
+      "content": "### Jetpack Compose changed how I think about Android UI. Declarative, Kotlin-first, and surprisingly performant. Here's what the migration taught me.\n\n#### State Hoisting Is Non-Negotiable\nCompose recomposes when state changes. Hoist state to the lowest common ancestor. Stateless composables are reusable, testable, and predictable.\n\n```kotlin\n@Composable\nfun CounterScreen() {\n    var count by remember { mutableStateOf(0) }\n    CounterDisplay(count = count)\n    CounterControls(onIncrement = { count++ }, onDecrement = { count-- })\n}\n```\n\n#### Performance: Stability > Optimization\nDon't prematurely optimize with `remember` or `derivedStateOf`. Make composables stable first: use immutable data classes, avoid lambda allocations in composition.\n\n#### Migration Strategy: Interop First\nDon't rewrite everything. Use `ComposeView` in XML layouts, `AndroidView` for Compose in XML. Migrate screen by screen. The interop is seamless.\n\n#### Testing: Compose Testing Rules\nUse `ComposeTestRule` for unit testing composables. Test behavior, not implementation. Semantic queries make tests resilient to UI changes.\n\nCompose isn't just a new UI toolkit — it's a new mental model: declarative UI, unidirectional data flow, and Kotlin's expressiveness."
+    }
+  ],
+  "hobbies": [
+    {
+      "id": "h1",
+      "icon": "🖋️",
+      "title": "Vector & Lettering Illustration",
+      "category": "Design Craft",
+      "description": "Designing quirky brand logos, bespoke geometric vector iconography, and bold typographic layouts. Maintaining a continuous visual practice that informs front-end component structures.",
+      "accent": "bg-[#F5C800]",
+      "funFact": "Enjoys using halftone filters and retro ink bleed effects to give digital art a physical printed vibe."
+    },
+    {
+      "id": "h2",
+      "icon": "🧩",
+      "title": "Algorithmic Speed Puzzles",
+      "category": "Logic Engine",
+      "description": "Engaging in algorithmic strategy card games and solving complex multi-dimensional mathematical puzzles. Practicing speed-solving Rubik's cubes as a cognitive warmup.",
+      "accent": "bg-[#E8281A] text-white",
+      "funFact": "Best solving time for a standard 3x3 Rubik's Cube is 17.4 seconds!"
+    },
+    {
+      "id": "h3",
+      "icon": "⛰️",
+      "title": "Travel & Landscape Photography",
+      "category": "Visual Archive",
+      "description": "Exploring historical architectures of Gujarat, identifying geometric proportions in heritage sites, and documenting cityscapes under low-light high-contrast compositions.",
+      "accent": "bg-[#1A5CE8] text-white",
+      "funFact": "Keeps a growing analog journal filled with architectural sketch drafts and high-contrast street photos."
+    },
+    {
+      "id": "h4",
+      "icon": "💿",
+      "title": "Generative Audio & Synth",
+      "category": "Soundscapes",
+      "description": "Modulating analog synthesizers and programming mathematical sound loops. Exploring how audio waves oscillate under distinct web audio API sound canvases.",
+      "accent": "bg-[#faf6ec]",
+      "funFact": "Actually coded a custom Web Audio synthesizer that converts mouse movement coordinates into low-fi minor-pentatonic melody scales."
+    }
+  ],
+  "messages": [],
+  "siteSettings": {
+    "socialLinks": {
+      "github": "https://github.com/Anurudrr",
+      "leetcode": "https://leetcode.com/u/ANURUDH_SINGH_RAJAWAT/",
+      "linkedin": "https://www.linkedin.com/in/anurudh-singh-251067307/",
+      "email": "sanurudh938@gmail.com",
+      "phone": "+91 73893 82433"
+    },
+    "seo": {
+      "title": "Anurudh Singh Rajawat — Developer Portfolio Platform",
+      "description": "Interactive editorial portfolio showcasing Computer Science engineering integrated with professional graphic design standards."
+    },
+    "welcomeMessage": "WELCOME RECRUITER. INCOMING SYSTEMS STACK SECURED."
+  },
+  "newsletters": [
+    {
+      "email": "localdev@example.com",
+      "subscribedAt": "2026-08-02T13:52:13.038Z",
+      "source": "blog"
+    }
+  ]
+}
