@@ -16,17 +16,17 @@ export const config = {
     },
     experiences: [
         {
-            position: "Full-Stack Developer",
-            company: "Self-Development",
-            period: "2025-Present",
-            location: "India",
-            description: "Building modern web applications using React, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
+            position: "Computer Science Student",
+            company: "Parul Institute of Technology",
+            period: "2023-Present",
+            location: "Vadodara, India",
+            description: "Pursuing a B.Tech in Computer Science & Engineering. Building strong fundamentals in data structures, algorithms, and software engineering.",
             responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating PostgreSQL",
-                "Creating responsive and interactive user interfaces with Tailwind CSS and Motion"
+                "Learning core computer science concepts",
+                "Programming in Java and Kotlin",
+                "Participating in hackathons and coding competitions"
             ],
-            technologies: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "PostgreSQL", "Figma"]
+            technologies: ["Java", "Kotlin", "C++", "DSA", "Problem Solving"]
         },
         {
             position: "UI/UX Designer",
@@ -42,17 +42,17 @@ export const config = {
             technologies: ["Figma", "Canva", "Adobe XD", "Visual Design"]
         },
         {
-            position: "Computer Science Student",
-            company: "Parul Institute of Technology",
-            period: "2023-Present",
-            location: "Vadodara, India",
-            description: "Pursuing a B.Tech in Computer Science & Engineering. Building strong fundamentals in data structures, algorithms, and software engineering.",
+            position: "Full-Stack Developer",
+            company: "Self-Development",
+            period: "2025-Present",
+            location: "India",
+            description: "Building modern web applications using React, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
             responsibilities: [
-                "Learning core computer science concepts",
-                "Programming in Java and Kotlin",
-                "Participating in hackathons and coding competitions"
+                "Developing full-stack web applications using React and Node.js",
+                "Building RESTful APIs and integrating PostgreSQL",
+                "Creating responsive and interactive user interfaces with Tailwind CSS and Motion"
             ],
-            technologies: ["Java", "Kotlin", "C++", "DSA", "Problem Solving"]
+            technologies: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "PostgreSQL", "Figma"]
         }
     ],
     projects: [
