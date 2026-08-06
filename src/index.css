@@ -1845,6 +1845,17 @@ img {
   color: hsl(var(--background));
 }
 
+/* Availability dot pulse in the design contact header */
+@keyframes asPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(163, 214, 92, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 9px rgba(163, 214, 92, 0);
+  }
+}
+
 html[data-accent='solar'] {
   --as-accent: #ef7b3c;
   --as-accent-2: #f2c94c;

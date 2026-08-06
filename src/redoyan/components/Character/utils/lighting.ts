@@ -18,10 +18,14 @@ const setLighting = (scene: THREE.Scene, renderer: THREE.WebGLRenderer) => {
   pointLight.castShadow = true;
   scene.add(pointLight);
 
+  const fillLight = new THREE.DirectionalLight(0xffffff, 0);
+  fillLight.position.set(2, 1, 3);
+  scene.add(fillLight);
+
   try {
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
     pmremGenerator.compileEquirectangularShader();
-    scene.environment = pmremGenerator.fromScene(new RoomEnvironment()).texture;
+    scene.environment = pmremGenerator.fromScene(RoomEnvironment()).texture;
     scene.environmentIntensity = 0;
     scene.environmentRotation.set(5.76, 85.85, 1);
   } catch(e) {
@@ -41,14 +45,20 @@ const setLighting = (scene: THREE.Scene, renderer: THREE.WebGLRenderer) => {
 
   function turnOnLights() {
     gsap.to(scene, {
-      environmentIntensity: 0.64,
+      environmentIntensity: 1.1,
       duration: duration,
       ease: ease,
     });
     gsap.to(directionalLight, {
-      intensity: 1,
+      intensity: 1.8,
       duration: duration,
       ease: ease,
+    });
+    gsap.to(fillLight, {
+      intensity: 0.7,
+      duration: duration,
+      ease: ease,
+      delay: 0.25,
     });
     gsap.to(".character-rim", {
       y: "55%",
