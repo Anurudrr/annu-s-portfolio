@@ -319,7 +319,7 @@ const Play = () => {
     <div className="play-page">
       {/* Header */}
       <div className="play-header">
-        <Link to="/" className="back-button" data-cursor="disable">
+        <Link to="/dev" className="back-button" data-cursor="disable">
           ← Back to Home
         </Link>
       </div>

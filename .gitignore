@@ -24,6 +24,3 @@ scripts/*.cjs.bak
 artifacts/
 
 .env*.local
-
-# Orphan LFS pointer (real binary was stripped, push was rejected)
-public/models/character.glb

@@ -4,7 +4,8 @@
       "Bash(mkdir -p scripts)",
       "Bash(mv find_images.cjs list_all.cjs scripts/)",
       "Bash(rm -f tempCodeRunnerFile.python tmp.txt)",
-      "Bash(rm -rf .dist)"
+      "Bash(rm -rf .dist)",
+      "Bash(npm run *)"
     ]
   }
 }

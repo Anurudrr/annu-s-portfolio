@@ -307,6 +307,31 @@
   z-index: 2;
 }
 
+/* Portrait fallback — visible only when the GLB didn't load. */
+.character-model .character-portrait {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 95%;
+  max-height: 90vh;
+  width: auto;
+  z-index: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 0 60px rgba(194, 164, 255, 0.35));
+  -webkit-user-drag: none;
+  user-select: none;
+  display: none;
+}
+
+.character-model.character-fallback .character-portrait {
+  display: block;
+}
+
+.character-model.character-fallback .character-hover {
+  display: none;
+}
+
 .character-hover {
   position: absolute;
   width: 280px;

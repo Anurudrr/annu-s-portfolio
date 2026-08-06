@@ -87,7 +87,7 @@ const Work = () => {
             <div className="see-all-works">
               <h3>Want to see more?</h3>
               <p>Explore all of my projects and creations</p>
-              <Link to="/myworks" className="see-all-btn" data-cursor="disable">
+              <Link to="/dev/work" className="see-all-btn" data-cursor="disable">
                 See All Works →
               </Link>
             </div>

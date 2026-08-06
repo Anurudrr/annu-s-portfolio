@@ -17,7 +17,7 @@ const Scene = () => {
   const canvasDiv = useRef<HTMLDivElement | null>(null);
   const hoverDivRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef(new THREE.Scene());
-  const { setLoading } = useLoading();
+  const { setLoading, setIsLoading } = useLoading();
 
   const [character, setChar] = useState<THREE.Object3D | null>(null);
   useEffect(() => {
@@ -46,7 +46,7 @@ const Scene = () => {
 
       let headBone: THREE.Object3D | null = null;
       let screenLight: any | null = null;
-      let mixer: THREE.AnimationMixer;
+      let mixer: THREE.AnimationMixer | undefined;
 
       const clock = new THREE.Clock();
 
@@ -54,30 +54,52 @@ const Scene = () => {
       let progress = setProgress((value) => setLoading(value));
       const { loadCharacter } = setCharacter(renderer, scene, camera);
 
-      loadCharacter().then((gltf) => {
-        if (gltf) {
-          const animations = setAnimations(gltf);
-          hoverDivRef.current && animations.hover(gltf, hoverDivRef.current);
-          mixer = animations.mixer;
-          let character = gltf.scene;
-          setChar(character);
-          scene.add(character);
-          headBone = character.getObjectByName("spine006") || null;
-          screenLight = character.getObjectByName("screenlight") || null;
-          progress.loaded().then(() => {
-            setTimeout(() => {
-              light.turnOnLights();
-              animations.startIntro();
-            }, 2500);
-          });
-          window.addEventListener("resize", () =>
-            handleResize(renderer, camera, canvasDiv, character)
-          );
-        }
-      }).catch(err => {
-        console.error("loadCharacter failed:", err);
-        progress.clear();
-      });
+      // Track whether the model loaded so the render loop and resize handler
+      // can no-op when we're in portrait-fallback mode.
+      let modelLoaded = false;
+
+      loadCharacter()
+        .then((gltf) => {
+          if (gltf) {
+            const animations = setAnimations(gltf);
+            hoverDivRef.current && animations.hover(gltf, hoverDivRef.current);
+            mixer = animations.mixer;
+            const character = gltf.scene;
+            setChar(character);
+            scene.add(character);
+            headBone =
+              character.getObjectByName("spine006") ||
+              character.getObjectByName("spine.006") ||
+              null;
+            screenLight = character.getObjectByName("screenlight") || null;
+            modelLoaded = true;
+            progress.loaded().then(() => {
+              setTimeout(() => {
+                light.turnOnLights();
+                animations.startIntro();
+              }, 2500);
+            });
+            window.addEventListener("resize", () =>
+              handleResize(renderer, camera, canvasDiv, character)
+            );
+          } else {
+            // No GLB on the server — fall back to the static portrait and
+            // end the loading screen so the page isn't stuck.
+            progress.clear();
+            setIsLoading(false);
+            if (canvasDiv.current) {
+              canvasDiv.current.classList.add("character-fallback");
+            }
+          }
+        })
+        .catch((err) => {
+          console.error("loadCharacter failed:", err);
+          progress.clear();
+          setIsLoading(false);
+          if (canvasDiv.current) {
+            canvasDiv.current.classList.add("character-fallback");
+          }
+        });
 
       let mouse = { x: 0, y: 0 },
         interpolation = { x: 0.1, y: 0.2 };
@@ -112,6 +134,7 @@ const Scene = () => {
       }
       const animate = () => {
         requestAnimationFrame(animate);
+        if (!modelLoaded) return; // portrait fallback, nothing to render
         if (headBone) {
           handleHeadRotation(
             headBone,
@@ -132,12 +155,14 @@ const Scene = () => {
       animate();
       return () => {
         clearTimeout(debounce);
-        scene.clear();
-        renderer.dispose();
+        if (modelLoaded) {
+          scene.clear();
+          renderer.dispose();
+        }
         window.removeEventListener("resize", () =>
-          handleResize(renderer, camera, canvasDiv, character!)
+          handleResize(renderer, camera, canvasDiv, character as THREE.Object3D)
         );
-        if (canvasDiv.current) {
+        if (canvasDiv.current && modelLoaded) {
           canvasDiv.current.removeChild(renderer.domElement);
         }
         if (landingDiv) {
@@ -155,6 +180,14 @@ const Scene = () => {
         <div className="character-model" ref={canvasDiv}>
           <div className="character-rim"></div>
           <div className="character-hover" ref={hoverDivRef}></div>
+          {/* Portrait fallback — shown only when the GLB fails to load. The
+              3D canvas overlays it on top when the model is present. */}
+          <img
+            className="character-portrait"
+            src="/images/mypicnbg.png"
+            alt="Anurudh Singh Rajawat"
+            draggable={false}
+          />
         </div>
       </div>
     </>
