@@ -14,7 +14,6 @@ import setSplitText from "./utils/splitText";
 import { GitHubHeatmap } from "../../components/GitHubHeatmap";
 import AlgoPlayground from "../../components/AlgoPlayground";
 import PolaroidGallery from "../../components/PolaroidGallery";
-import Chat from "../../components/Chat";
 import { MetroActivityList } from "../../components/MetroActivityList";
 import { TerminalPalette } from "../../components/TerminalPalette";
 
@@ -68,7 +67,6 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <MetroActivityList />
         </div>
         <TerminalPalette />
-        <Chat />
 
         <CallToAction />
         <Contact />
