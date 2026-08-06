@@ -16,45 +16,72 @@ export const config = {
     },
     experiences: [
         {
-            position: "Computer Science Student",
+            position: "Beginning at Parul",
             company: "Parul Institute of Technology",
-            period: "2023-Present",
+            period: "2023",
             location: "Vadodara, India",
-            description: "Pursuing a B.Tech in Computer Science & Engineering. Building strong fundamentals in data structures, algorithms, and software engineering.",
+            description: "Started B.Tech CSE at Parul Institute of Technology, Vadodara. Built the foundation — programming basics, core CS concepts, first taste of DSA.",
             responsibilities: [
                 "Learning core computer science concepts",
                 "Programming in Java and Kotlin",
-                "Participating in hackathons and coding competitions"
+                "Building fundamentals in DSA"
             ],
-            technologies: ["Java", "Kotlin", "C++", "DSA", "Problem Solving"]
+            technologies: ["Java", "C++", "DSA", "Problem Solving"]
         },
         {
-            position: "UI/UX Designer",
-            company: "Self-Development",
+            position: "Discovering Design",
+            company: "UI/UX & Graphic Design",
             period: "2024",
             location: "India",
-            description: "Spent a year focusing on UI/UX design, creating wireframes, prototypes, and high-fidelity designs for web and mobile applications.",
+            description: "Dove into graphic design: Canva, Figma, UI/UX principles. Developed a strong geometric and visual-layout instinct — the black/gold, brutalist, 90s-cartoon aesthetic that still defines every project.",
             responsibilities: [
                 "Designing interfaces using Figma, Canva, and Adobe XD",
                 "Learning design principles, color theory, and typography",
-                "Bridging the gap between design and development"
+                "Developing a signature geometric and brutalist visual style"
             ],
             technologies: ["Figma", "Canva", "Adobe XD", "Visual Design"]
         },
         {
-            position: "Full-Stack Developer",
-            company: "Self-Development",
-            period: "2025-Present",
+            position: "From Designer to Developer",
+            company: "React Development",
+            period: "2025",
             location: "India",
-            description: "Building modern web applications using React, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
+            description: "Design work started turning into code. Began converting visual components into modular React codebases — the real pivot point from \"designer\" to \"design-forward developer.\"",
             responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating PostgreSQL",
-                "Creating responsive and interactive user interfaces with Tailwind CSS and Motion"
+                "Converting visual components into modular React codebases",
+                "Bridging design systems with component architecture",
+                "Learning TypeScript, Node.js, and backend fundamentals"
             ],
-            technologies: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "PostgreSQL", "Figma"]
+            technologies: ["React", "TypeScript", "Node.js", "Tailwind CSS", "Figma"]
+        },
+        {
+            position: "Building Products & DSA",
+            company: "Full-Stack Development",
+            period: "2026",
+            location: "India",
+            description: "Full focus on DSA (Java), React 19/TypeScript, and shipping real full-stack systems: EVENTO, HopIn, Stickr, Rhythm Flux, and AS.DEV v2. Actively applying for placements/internships, with JPMorgan Forage and NPTEL certifications backing the resume.",
+            responsibilities: [
+                "Shipping full-stack products: EVENTO, HopIn, Stickr, Rhythm Flux",
+                "Sharpening DSA in Java and React 19/TypeScript",
+                "Applying for placements and internships"
+            ],
+            technologies: ["React 19", "TypeScript", "Java", "DSA", "Node.js", "PostgreSQL"]
+        },
+        {
+            position: "What's Next",
+            company: "The Road Ahead",
+            period: "FUTURE",
+            location: "Global",
+            description: "Chasing high-performance technical roles, sharpening advanced DSA and systems skills, and shipping scalable products globally — design craftsmanship stays non-negotiable.",
+            responsibilities: [
+                "Landing high-performance technical roles",
+                "Sharpening advanced DSA and systems skills",
+                "Shipping scalable products globally"
+            ],
+            technologies: ["Systems Design", "Advanced DSA", "Product Engineering"]
         }
     ],
+    careerCoreThread: "Started as a designer, fell in love with code, never picked one over the other.",
     projects: [
         {
             id: 1,

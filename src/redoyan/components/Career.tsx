@@ -32,6 +32,10 @@ const Career = () => {
               <p>{exp.description}</p>
             </div>
           ))}
+          <div className="career-core-thread">
+            <h3>Core Thread</h3>
+            <p>{config.careerCoreThread}</p>
+          </div>
         </div>
       </div>
     </div>

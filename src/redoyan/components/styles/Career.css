@@ -111,6 +111,50 @@
   animation: timeline 0.8s linear infinite forwards;
 }
 
+.career-core-thread {
+  margin: 60px auto 0px;
+  padding: 30px 40px;
+  max-width: 720px;
+  border: 1px solid rgba(194, 164, 255, 0.25);
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(194, 164, 255, 0.08),
+    rgba(194, 164, 255, 0.02)
+  );
+  text-align: center;
+}
+
+.career-core-thread h3 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accentColor);
+  margin: 0 0 14px;
+  font-weight: 500;
+}
+
+.career-core-thread p {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .career-core-thread {
+    margin-top: 40px;
+    padding: 24px 20px;
+  }
+
+  .career-core-thread p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 @keyframes timeline {
 
   10%,
